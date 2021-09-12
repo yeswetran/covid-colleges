@@ -1,36 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            li {
-                color: rgb(204, 33, 33);
-            }
-            #last_li {
-                color: black;
-            }
-            h1 {
-                color: rgb(255, 156, 8);
-                background-color: rgb(14, 89, 158);
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            }
-            ul li {
-                background-color: black;
-                color: white;
-                list-style-type: none;
-                display: inline-block;
-                width: 25%;
-                padding: 0px;
-                margin: 0px;
-            }
-            ul li:hover {
-                background-color: red;
-                color: white;
-            }
-            p {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
-            li {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
-            h2 {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
-            .mudd{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
-        </style>
+        <meta name = "description" content="Track and compare COVID-19 rates across the Claremont Colleges.">
+        <link rel="stylesheet" href="styles.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMLMRCF409"></script>
         <script>
@@ -41,22 +13,26 @@
         </script>
     </head>
     <body>
-        <h1>COVID Numbers Across the Claremont Colleges</h1>
+        <h1>COVID-19 Numbers Across the Claremont Colleges</h1>
         <p><i>Unfortunately, because <a href="https://www.pitzer.edu/pathway-forward/covid-19-dashboard/">Pitzer</a>, <a href="https://www.hmc.edu/covid-19/dashboard/">HMC</a>, and <a href="https://cmc-returns21.cmc.edu/covid-19-dashboard/">CMC's</a> dashboards are not live on Tableau Public, their numbers might not be the most up-to-date.</i></p>
+        <p><i>If you are mildly frustrated about that like I am, you should <a href="thoughts-on-dashboards.html">click here.</a></i></p>
+        <div id="pom">
         <script type='text/javascript' src='https://tableau.campus.pomona.edu/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1000px; height: 627px;'><object class='tableauViz' width='1000' height='627' style='display:none;'><param name='host_url' value='https%3A%2F%2Ftableau.campus.pomona.edu%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DailyHealthCheckDashboardTEST&#47;PomonaCollegeCOVID-19FullWeeklyTestingData' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='display_count' value='n' /><param name='origin' value='viz_share_link' /></object></div>
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fyeswetran.github.io%2Fcovid-colleges%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div id="scr">
         <h2>Scripps College COVID-19 Full Weekly Testing Data</h2>
         <div class='tableauPlaceholder' id='viz1631348244177' style='position: relative'><noscript><a href='https:&#47;&#47;www.scrippscollege.edu&#47;'><img alt='COVID DASHBOARD ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVIDDashboard_16300962982260&#47;COVIDDASHBOARD&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVIDDashboard_16300962982260&#47;COVIDDASHBOARD' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVIDDashboard_16300962982260&#47;COVIDDASHBOARD&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1631348244177');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div id="cmc">
         <h2>Claremont McKenna College COVID-19 Full Weekly Testing Data</h2>
-        <img src="https://cpb-us-w2.wpmucdn.com/sites.cmc.edu/dist/a/54/files/2020/06/covid-dashboard-0910.jpg"/>
+        <a href="https://cmc-returns21.cmc.edu/covid-19-dashboard/"><img src="https://cpb-us-w2.wpmucdn.com/sites.cmc.edu/dist/a/54/files/2020/06/covid-dashboard-0910.jpg" title= "I'm most annoyed about this one because clearly, CMC put in the work to make the Tableau dashboard, so why not just upload it to Tableau Public???" alt="Visit https://cmc-returns21.cmc.edu/covid-19-dashboard/ for the best possible numbers."/></span></a>
+        <div id="hmc">
         <h2>Harvey Mudd College COVID-19 Full Weekly Testing Data</h2>
-        <div class="mudd"><u>Students</u></div>
-        <img src="https://i.imgur.com/1aZdyOI.png" width = "800">
-        <div class="mudd"><u>Staff</u></div> 
-        <img src="https://i.imgur.com/DeHQQ2D.png" width = "800">
+        <u>Students</u><br>
+        <a href="https://www.hmc.edu/covid-19/dashboard/"><img src="https://i.imgur.com/1aZdyOI.png" alt="Visit https://www.hmc.edu/covid-19/dashboard/ for the best possible numbers." width = "800"></a>
+        <br><u>Staff</u><br> 
+        <a href="https://www.hmc.edu/covid-19/dashboard/"><img src="https://i.imgur.com/DeHQQ2D.png" width = "800"></a>
+        <div id="pz">
         <h2>Pitzer College COVID-19 Full Weekly Testing Data</h2>
-        <img src="https://i.imgur.com/HuhCTHj.png" width = "1000">
+        <a href="https://www.pitzer.edu/pathway-forward/covid-19-dashboard/"><img src="https://i.imgur.com/HuhCTHj.png" alt= "Visit https://www.pitzer.edu/pathway-forward/covid-19-dashboard/ for the best possible numbers." width = "1000"></a>
         <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fyeswetran.github.io%2Fcovid-colleges%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </body>
 </html>
-
